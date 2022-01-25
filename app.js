@@ -39,18 +39,25 @@ app.post("/", function(req, res) {
 
     const options = {
         method: "POST",
-        auth: "suyashbahrani:ef5307cdc4cbdc6ad5b47dff47d887fa-us20"
+        auth: "suyashbahrani:710757744c919b62e51986d92be14cd1-us20"
     }
 
 
 
     const request  = https.request(url, options, function(response) {
+        if (response.statusCode === 200) {
+            res.sendFile(__dirname + "/success.html");
+        } else {
+            res.sendFile(__dirname + "/failure.html");
+        }
+        
+        
         response.on("data", function(data){
             //console.log(JSON.parse(data));
 
-        })
+        });
 
-    })
+    });
 
     request.write(jsonData);
     request.end();
