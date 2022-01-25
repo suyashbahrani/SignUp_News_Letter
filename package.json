@@ -1,0 +1,24 @@
+{
+  "name": "signup_news_letter",
+  "version": "1.0.0",
+  "description": "Signing up for newsletter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyashbahrani/SignUp_News_Letter.git"
+  },
+  "author": "Suyash Bahrani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suyashbahrani/SignUp_News_Letter/issues"
+  },
+  "homepage": "https://github.com/suyashbahrani/SignUp_News_Letter#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "request": "^2.88.2"
+  }
+}
