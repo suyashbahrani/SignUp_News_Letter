@@ -15,7 +15,7 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-    //console.log("req::: " + JSON.stringify(req.body));
+    //console.log("req::: " , req.body);
     const firstName = req.body.fname;
     const lastName = req.body.lname;
     const email = req.body.email;
